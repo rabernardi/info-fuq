@@ -1,0 +1,47 @@
+\documentclass[]{article}
+
+
+%RB
+%\usepackage{xcolor}
+\newcounter{tbsnr}
+\newenvironment{tbs}
+{\addtocounter{tbsnr}{1}\par\bigskip\noindent\fbox{\thetbsnr}
+\hspace*{\fill}\begin{minipage}{7cm}\tt}
+{\end{minipage}\hspace*{\fill}\bigskip}
+\newcommand{\tb}[1]{\begin{tbs}{#1}\end{tbs}}
+
+%\usepackage{multirow}
+
+\usepackage{booktabs} 
+
+\newcommand{\cut}[1]{}
+
+\newcommand{\rb}[1]{\textcolor{blue}{\textbf{ #1}}}
+\newcommand{\dm}[1]{\textcolor{magenta}{\textbf{DI: #1}}}
+\newcommand{\rs}[1]{\textcolor{blue}{\textbf{ #1}}}
+
+
+
+\title{Informative Follow Up questions}
+
+%\begin{abstract}
+%BLA BLA
+%\end{abstract}
+\begin{document}
+
+\maketitle
+
+\input{introduction}
+\input{related_work}
+\input{task_data}
+\input{models}
+\input{experiments}
+\input{results}
+%\input{conclusion}
+%\input{discussion}
+
+
+\bibliographystyle{alpha}
+\bibliography{raffa}
+
+\end{document}

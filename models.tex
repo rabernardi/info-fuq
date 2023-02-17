@@ -1,0 +1,20 @@
+\section{Models}
+\label{sec:models}
+
+\paragraph{Confirm-it} Encoder-Decoder-plus-Guesser, with an internal
+Oracle that at inference time helps the QGen to generate the question
+that confirms its hypothesis (the cadidate with highest probability at
+the previous turn). 
+
+\paragraph{Rational} Encoder-Decoder-plus-Guesser, with an internal
+Oracle that at inference time helps the QGEn to optimally divide the
+hypothetical space. 
+
+For both models we develop the version that incorporate the
+problem-solving strategy during the training phase exploiting
+continual learning losses.
+
+
+%\rb{For the Guesser, can we use Amazon's guesser? }
+
+
