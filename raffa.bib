@@ -51,6 +51,23 @@
 }
 
 
+Ruggeri, A., & Lombrozo, T. (2015). . Cognition, 143, 203–216.
+
+
+
+@Article{rugg:children15,
+  author = 	 {Ruggeri, A. and Lomborzo, T.},
+  title = 	 {Children adapt their questions to achieve efficient search},
+  journal = 	 {Cognition},
+  year = 	 {},
+  OPTkey = 	 {},
+  volume = 	 {143},
+  OPTnumber = 	 {},
+  pages = 	 {203--216},
+  OPTmonth = 	 {},
+  note = 	 {https://doi.org/10.1016/j.cognition.2015.07.004},
+  OPTannote = 	 {}
+}
 
 @Article{greco:front23,
   author = 	 {},
@@ -78,5 +95,83 @@
   OPTmonth = 	 {},
   OPTnote = 	 {},
   OPTannote = 	 {}
+}
+
+@inproceedings{urbanek-etal-2019-learning,
+    title = "Learning to Speak and Act in a Fantasy Text Adventure Game",
+    author = {Urbanek, Jack  and
+      Fan, Angela  and
+      Karamcheti, Siddharth  and
+      Jain, Saachi  and
+      Humeau, Samuel  and
+      Dinan, Emily  and
+      Rockt{\"a}schel, Tim  and
+      Kiela, Douwe  and
+      Szlam, Arthur  and
+      Weston, Jason},
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1062",
+    doi = "10.18653/v1/D19-1062",
+    pages = "673--683",
+    abstract = "We introduce a large-scale crowdsourced text adventure game as a research platform for studying grounded dialogue. In it, agents can perceive, emote, and act whilst conducting dialogue with other agents. Models and humans can both act as characters within the game. We describe the results of training state-of-the-art generative and retrieval models in this setting. We show that in addition to using past dialogue, these models are able to effectively use the state of the underlying world to condition their predictions. In particular, we show that grounding on the details of the local environment, including location descriptions, and the objects (and their affordances) and characters (and their previous actions) present within it allows better predictions of agent behavior and dialogue. We analyze the ingredients necessary for successful grounding in this setting, and how each of these factors relate to agents that can talk and act successfully.",
+}
+
+
+@inproceedings{qi-etal-2020-stay,
+    title = "Stay Hungry, Stay Focused: Generating Informative and Specific Questions in Information-Seeking Conversations",
+    author = "Qi, Peng  and
+      Zhang, Yuhao  and
+      Manning, Christopher D.",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.findings-emnlp.3",
+    doi = "10.18653/v1/2020.findings-emnlp.3",
+    pages = "25--40",
+    abstract = "We investigate the problem of generating informative questions in information-asymmetric conversations. Unlike previous work on question generation which largely assumes knowledge of what the answer might be, we are interested in the scenario where the questioner is not given the context from which answers are drawn, but must reason pragmatically about how to acquire new information, given the shared conversation history. We identify two core challenges: (1) formally defining the informativeness of potential questions, and (2) exploring the prohibitively large space of potential questions to find the good candidates. To generate pragmatic questions, we use reinforcement learning to optimize an informativeness metric we propose, combined with a reward function designed to promote more specific questions. We demonstrate that the resulting pragmatic questioner substantially improves the informativeness and specificity of questions generated over a baseline model, as evaluated by our metrics as well as humans.",
+}
+
+@inproceedings{mazuecos-etal-2021-region,
+    title = "Region under {D}iscussion for visual dialog",
+    author = "Mazuecos, Mauricio  and
+      Luque, Franco M.  and
+      S{\'a}nchez, Jorge  and
+      Maina, Hern{\'a}n  and
+      Vadora, Thomas  and
+      Benotti, Luciana",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.390",
+    doi = "10.18653/v1/2021.emnlp-main.390",
+    pages = "4745--4759",
+    abstract = "Visual Dialog is assumed to require the dialog history to generate correct responses during a dialog. However, it is not clear from previous work how dialog history is needed for visual dialog. In this paper we define what it means for a visual question to require dialog history and we release a subset of the Guesswhat?! questions for which their dialog history completely changes their responses. We propose a novel interpretable representation that visually grounds dialog history: the Region under Discussion. It constrains the image{'}s spatial features according to a semantic representation of the history inspired by the information structure notion of Question under Discussion.We evaluate the architecture on task-specific multimodal models and the visual transformer model LXMERT.",
+}
+
+@inproceedings{shukla-etal-2019-ask,
+    title = "What Should {I} Ask? Using Conversationally Informative Rewards for Goal-oriented Visual Dialog.",
+    author = "Shukla, Pushkar  and
+      Elmadjian, Carlos  and
+      Sharan, Richika  and
+      Kulkarni, Vivek  and
+      Turk, Matthew  and
+      Wang, William Yang",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1646",
+    doi = "10.18653/v1/P19-1646",
+    pages = "6442--6451",
+    abstract = "The ability to engage in goal-oriented conversations has allowed humans to gain knowledge, reduce uncertainty, and perform tasks more efficiently. Artificial agents, however, are still far behind humans in having goal-driven conversations. In this work, we focus on the task of goal-oriented visual dialogue, aiming to automatically generate a series of questions about an image with a single objective. This task is challenging since these questions must not only be consistent with a strategy to achieve a goal, but also consider the contextual information in the image. We propose an end-to-end goal-oriented visual dialogue system, that combines reinforcement learning with regularized information gain. Unlike previous approaches that have been proposed for the task, our work is motivated by the Rational Speech Act framework, which models the process of human inquiry to reach a goal. We test the two versions of our model on the GuessWhat?! dataset, obtaining significant results that outperform the current state-of-the-art models in the task of generating questions to find an undisclosed object in an image.",
 }
 
